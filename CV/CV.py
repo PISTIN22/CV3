@@ -7,13 +7,13 @@ class CVWindow:
 
         header_frame = tk.Frame(root, bg="lightblue", pady=10)
         header_frame.pack(fill=tk.X)
-       # self.photo = tk.PhotoImage(file="\photo.jpg")
+        self.photo = tk.PhotoImage(file="\photo.jpg")
         self.header_label = tk.Label(header_frame, text="Atakan Adalı", font=("Helvetica", 18, "bold"), pady=5)
         self.header_label.pack()
         self.role_label = tk.Label(header_frame, text="Junior Developer", font=("Helvetica", 12), pady=5)
         self.role_label.pack()
-        # self.photo_label = tk.Label(header_frame, image=self.photo)
-        # self.photo_label.pack()
+        self.photo_label = tk.Label(header_frame, image=self.photo)
+        self.photo_label.pack()
 
         main_frame = tk.Frame(root)
         main_frame.pack(padx=10, pady=10)
